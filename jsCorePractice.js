@@ -89,3 +89,8 @@ const userFilterTest = () => {
 // Reduce the array to an object where the keys are the numbers appearing in the array
 // and the values are the number of occurrences of each number
 // Result should look like this: {1:2, 2:4, 3:2, 4:3, 5:3, 6:1 }
+
+// Note: Object.values() returns the values in an object's key/value pairs as an array
+// Note: Object.keys() returns the keys in an object's key/value pairs as an array
+
+const reduceTestArray = [2, 2, 3, 4, 4, 5, 2, 2, 5, 5, 3, 1, 1, 6, 4]
