@@ -94,11 +94,16 @@ const userFilterTest = () => {
 // Note: Object.keys() returns the keys in an object's key/value pairs as an array
 // Note: .includes() checks to see whether an array contains a specific value
 
-// Verbose Method
-
 const reduceTestArray = [2, 2, 3, 4, 4, 5, 2, 2, 5, 5, 3, 1, 1, 6, 4]
 
 const reduceInitialValue = {}
+
+const reduceArrayDisplay = () => {
+	let output = reduceTestArray.toString()
+	document.getElementById('ReduceTestArray').innerHTML = output
+}
+
+// Verbose Method
 
 // const reducerFunction = (number, count) => {
 // 	!number[count] ? (number[count] = 1) : (number[count] += 1)
