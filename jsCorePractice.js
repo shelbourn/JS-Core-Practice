@@ -80,3 +80,12 @@ const userFilterTest = () => {
 		'UserFilterTest'
 	).innerHTML = userTestArray.filter(element => element.includes(userTempInput))
 }
+
+/****************
+ * .reduce() Method
+ */
+
+// Question from Nick: use array [2,2,3,4,4,5,2,2,5,5,3,1,1,6,4]
+// Reduce the array to an object where the keys are the numbers appearing in the array
+// and the values are the number of occurrences of each number
+// Result should look like this: {1:2, 2:4, 3:2, 4:3, 5:3, 6:1 }
