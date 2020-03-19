@@ -122,3 +122,7 @@ const condensedResult = reduceTestArray.reduce((number, count) => {
 }, reduceInitialValue)
 
 console.log(condensedResult)
+
+const reducedArrayDisplay = () => {
+	document.getElementById('ReducedTestArray').innerHTML = condensedResult
+}
