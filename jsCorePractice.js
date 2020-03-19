@@ -92,5 +92,10 @@ const userFilterTest = () => {
 
 // Note: Object.values() returns the values in an object's key/value pairs as an array
 // Note: Object.keys() returns the keys in an object's key/value pairs as an array
+// Note: .includes() checks to see whether an array contains a specific value
 
 const reduceTestArray = [2, 2, 3, 4, 4, 5, 2, 2, 5, 5, 3, 1, 1, 6, 4]
+
+const reduceResult = reduceTestArray.reduce((result, value) => {
+  result.includes(value) ? 
+}
