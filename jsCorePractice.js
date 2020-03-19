@@ -124,5 +124,7 @@ const condensedResult = reduceTestArray.reduce((number, count) => {
 console.log(condensedResult)
 
 const reducedArrayDisplay = () => {
-	document.getElementById('ReducedTestArray').innerHTML = condensedResult
+	document.getElementById('ReducedTestArray').innerHTML = JSON.stringify(
+		condensedResult
+	)
 }
