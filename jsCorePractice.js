@@ -116,15 +116,15 @@ const reduceArrayDisplay = () => {
 
 // Condensed Method
 
-// const condensedResult = reduceTestArray.reduce((number, count) => {
-// 	!number[count] ? (number[count] = 1) : (number[count] += 1)
-// 	return number
-// }, reduceInitialValue)
+const condensedResult = reduceTestArray.reduce((number, count) => {
+	!number[count] ? (number[count] = 1) : (number[count] += 1)
+	return number
+}, reduceInitialValue)
 
-// console.log(condensedResult)
+console.log(condensedResult)
 
-// const reducedArrayDisplay = () => {
-// 	document.getElementById('ReducedTestArray').innerHTML = JSON.stringify(
-// 		condensedResult
-// 	)
-// }
+const reducedArrayDisplay = () => {
+	document.getElementById('ReducedTestArray').innerHTML = JSON.stringify(
+		condensedResult
+	)
+}
