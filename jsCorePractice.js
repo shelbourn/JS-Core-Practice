@@ -80,3 +80,45 @@ const userFilterTest = () => {
 		'UserFilterTest'
 	).innerHTML = userTestArray.filter(element => element.includes(userTempInput))
 }
+
+/****************
+ * .reduce() Method
+ */
+
+// Question from Nick: use array [2,2,3,4,4,5,2,2,5,5,3,1,1,6,4]
+// Reduce the array to an object where the keys are the numbers appearing in the array
+// and the values are the number of occurrences of each number
+// Result should look like this: {1:2, 2:4, 3:2, 4:3, 5:3, 6:1 }
+
+// Note: Object.values() returns the values in an object's key/value pairs as an array
+// Note: Object.keys() returns the keys in an object's key/value pairs as an array
+// Note: .includes() checks to see whether an array contains a specific value
+
+const reduceTestArray = [2, 2, 3, 4, 4, 5, 2, 2, 5, 5, 3, 1, 1, 6, 4]
+
+const reduceInitialValue = {}
+
+const reduceArrayDisplay = () => {
+	let output = reduceTestArray.toString()
+	document.getElementById('ReduceTestArray').innerHTML = output
+}
+
+// Verbose Method
+
+// const reducerFunction = (number, count) => {
+// 	!number[count] ? (number[count] = 1) : (number[count] += 1)
+// 	return number
+// }
+
+// let result = reduceTestArray.reduce(reducerFunction, reduceInitialValue)
+
+// console.log(result)
+
+// Condensed Method
+
+const condensedResult = reduceTestArray.reduce((number, count) => {
+	!number[count] ? (number[count] = 1) : (number[count] += 1)
+	return number
+}, reduceInitialValue)
+
+console.log(condensedResult)
