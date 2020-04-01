@@ -166,4 +166,8 @@ const fiveSecTimer = () => {
 	setTimeout(() => {
 		counter.value = 'Timer is done!'
 	}, 6000)
+
+	setTimeout(() => {
+		console.log('end')
+	}, 5000)
 }
