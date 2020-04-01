@@ -144,6 +144,7 @@ const reducedArrayDisplay = () => {
  * Inside function: use setTimeout and console.log('End')  after 5 seconds
  */
 
+// Timer that counts up 5 seconds and displays in HTML within an 'input' field with a start button
 const fiveSecTimer = () => {
 	console.log('Five seconds starting now...')
 
