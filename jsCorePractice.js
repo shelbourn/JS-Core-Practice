@@ -143,3 +143,27 @@ const reducedArrayDisplay = () => {
  * Style the output of the console with different font and background colors, font sizes, etc
  * Inside function: use setTimeout and console.log('End')  after 5 seconds
  */
+
+const fiveSecTimer = () => {
+	console.log('Five seconds starting now...')
+
+	let counter = document.getElementById('fiveSecTimer')
+	setTimeout(() => {
+		counter.value = '1 second'
+	}, 1000)
+	setTimeout(() => {
+		counter.value = '2 seconds'
+	}, 2000)
+	setTimeout(() => {
+		counter.value = '3 seconds'
+	}, 3000)
+	setTimeout(() => {
+		counter.value = '4 seconds'
+	}, 4000)
+	setTimeout(() => {
+		counter.value = '5 seconds'
+	}, 5000)
+	setTimeout(() => {
+		counter.value = 'Timer is done!'
+	}, 6000)
+}
