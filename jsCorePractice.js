@@ -16,7 +16,9 @@
  * .toString()
  */
 
-/******* .innerHTML - Retrieves or modifies the contents of an HTML element */
+/*******
+ * .innerHTML - Retrieves or modifies the contents of an HTML element
+ * */
 
 // Retrieving HTML of element - assigns value of HTML element with ID "RetrieveTest" to retrieveHTML
 let retrieveHTML = document.getElementById('RetrieveTest').innerHTML
@@ -29,7 +31,9 @@ const innerChangeTest = () => {
 	document.getElementById('ChangeTest').innerHTML =
 		'If you are seeing this then .innerHTML has successfully modified the content of this HTML element'
 }
-/********* .toString() Method */
+/*********
+ * .toString() Method
+ * */
 
 const toStringTest = () => {
 	let testArray = ['Skylar', 'Charlie', 'Matthew', 'Nikki', 'Andrew', 'Michael']
@@ -37,7 +41,9 @@ const toStringTest = () => {
 	document.getElementById('ToString').innerHTML = testOutput
 }
 
-/************* .filter() Method */
+/*************
+ * .filter() Method
+ * */
 
 const filterTestArrayCode = [8, 4, 10, 14, 16, 22, 35, 42, 28]
 
@@ -119,7 +125,7 @@ const reduceArrayDisplay = () => {
 const condensedResult = reduceTestArray.reduce((number, count) => {
 	!number[count] ? (number[count] = 1) : (number[count] += 1)
 	return number
-}, reduceInitialValue)
+}, {})
 
 console.log(condensedResult)
 
@@ -128,3 +134,12 @@ const reducedArrayDisplay = () => {
 		condensedResult
 	)
 }
+
+/*************************
+ * .setTimeout() method | Challenge 1 from Nick
+ *
+ * Write a function...
+ * At start: console.log('start')
+ * Style the output of the console with different font and background colors, font sizes, etc
+ * Inside function: use setTimeout and console.log('End')  after 5 seconds
+ */
