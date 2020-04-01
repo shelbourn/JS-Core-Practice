@@ -1,3 +1,5 @@
+![JavaScript Logo](https://miro.medium.com/max/3600/1*6ahbWjp_g9hqhaTDSJOL1Q.png)
+
 # JS-Core-Practice
 Live practice repo for core JS components such as arrow functions, built-in methods through ES6, React.js, etc.</br></br>
 A live version of this project can be viewed here: <a href="https://shelbourn.github.io/JS-Core-Practice/" target="_blank">JS Core Practice</a>
