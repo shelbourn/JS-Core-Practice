@@ -148,7 +148,7 @@ const reducedArrayDisplay = () => {
 const fiveSecTimer = () => {
 	console.log(
 		'%c Five seconds starting now... PS: NICK IS A BIIIIIIIITCH!',
-		'color: green; font-weight: bold; diplay: block'
+		'background-color: green; color: white; font-weight: bold; font-size: 1.5em; diplay: block;'
 	)
 
 	let counter = document.getElementById('fiveSecTimer')
@@ -172,6 +172,16 @@ const fiveSecTimer = () => {
 	}, 6000)
 
 	setTimeout(() => {
-		console.log('end')
+		console.log(
+			'%c END',
+			'background-color: red; color: white; font-weight: bold; font-size: 1.5em; display: block;'
+		)
 	}, 5000)
+
+	setTimeout(() => {
+		console.log(
+			'%c YUP, NICK IS STILL A BITCH!',
+			'background-color: yellow; color: black; font-weight: bold; font-size: 1.5em; display: block;'
+		)
+	}, 6000)
 }
