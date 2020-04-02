@@ -229,3 +229,17 @@ const tenSecTimer = () => {
  * Write a function...
  * Use setTimeout to console 1 second intervals up to 10 using recursion and then console out "End"
  */
+
+// Recursive function to continuously call itself until break criteria is met
+const timeoutCounter = count => {
+	if (count <= 10) {
+		setTimeout(() => {
+			console.log(count)
+			return timeoutCounter(count + 1)
+		}, 1000)
+	} else {
+		console.log('END')
+		return count
+	}
+}
+timeoutCounter(0)
