@@ -222,3 +222,10 @@ const tenSecTimer = () => {
 		intervalDisplay.value = intervalCounter - 1
 	}, 1000)
 }
+
+/****************
+ * Using .setTimeout() Method to emulate .setInterval() functionality - Challenge 3 from Nick
+ *
+ * Write a function...
+ * Use setTimeout to console 1 second intervals up to 10 using recursion and then console out "End"
+ */
