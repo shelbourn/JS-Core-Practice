@@ -230,16 +230,25 @@ const tenSecTimer = () => {
  * Use setTimeout to console 1 second intervals up to 10 using recursion and then console out "End"
  */
 
+// Retrieves user input for counter
+const userTimeout = prompt('Enter a number to count to.')
+
 // Recursive function to continuously call itself until break criteria is met
 const timeoutCounter = count => {
-	if (count <= 10) {
+	if (count <= parseInt(userTimeout)) {
 		setTimeout(() => {
-			console.log(count)
+			console.log(
+				`%c ${count}`,
+				'color: green; font-size: 1.5em; font-weight: bold;'
+			)
 			return timeoutCounter(count + 1)
 		}, 1000)
 	} else {
-		console.log('END')
+		console.log(
+			'%c END',
+			'color: white; background-color: red; font-size: 1.5em; font-weight: bold;'
+		)
 		return count
 	}
 }
-timeoutCounter(0)
+timeoutCounter(1)
