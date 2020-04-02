@@ -146,7 +146,10 @@ const reducedArrayDisplay = () => {
 
 // Timer that counts up 5 seconds and displays in HTML within an 'input' field with a start button
 const fiveSecTimer = () => {
-	console.log('Five seconds starting now...')
+	console.log(
+		'%c Five seconds starting now... PS: NICK IS A BIIIIIIIITCH!',
+		'background-color: green; color: white; font-weight: bold; font-size: 1.5em; diplay: block;'
+	)
 
 	let counter = document.getElementById('fiveSecTimer')
 	setTimeout(() => {
@@ -169,6 +172,16 @@ const fiveSecTimer = () => {
 	}, 6000)
 
 	setTimeout(() => {
-		console.log('end')
+		console.log(
+			'%c END',
+			'background-color: red; color: white; font-weight: bold; font-size: 1.5em; display: block;'
+		)
 	}, 5000)
+
+	setTimeout(() => {
+		console.log(
+			'%c YUP, NICK IS STILL A BITCH!',
+			'background-color: yellow; color: black; font-weight: bold; font-size: 1.5em; display: block;'
+		)
+	}, 6000)
 }
