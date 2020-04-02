@@ -244,6 +244,8 @@ const recursiveCounter = count => {
 				`%c ${count}`,
 				'color: green; font-size: 1.5em; font-weight: bold;'
 			)
+
+			// Outputs counter value to HTML
 			let userTimeoutDisplay = document.getElementById('recursiveTimeout')
 			userTimeoutDisplay.value = count
 			return recursiveCounter(count + 1)
