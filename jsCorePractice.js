@@ -145,6 +145,7 @@ const reducedArrayDisplay = () => {
  */
 
 // Timer that counts up 5 seconds and displays in HTML within an 'input' field with a start button
+
 const fiveSecTimer = () => {
 	console.log(
 		'%c Five seconds starting now... PS: NICK IS A BIIIIIIIITCH!',
@@ -193,3 +194,31 @@ const fiveSecTimer = () => {
  * Use setInterval to console out 1 second up to 10 seconds and then use clearInterval
  * to clear it and console out "end"
  */
+
+// Assigned the interval to a function for use in HTML
+const tenSecTimer = () => {
+	let intervalCounter = 1
+	let myInterval = setInterval(() => {
+		// Using string literal syntax to style the console output
+		console.log(
+			`%c ${intervalCounter}`,
+			'color: blue; font-weight: bold; font-size: 1.5em'
+		)
+
+		intervalCounter++
+
+		// Clears interval after 10 seconds
+		if (intervalCounter === 11) {
+			// console.log(
+			// 	`%c ${intervalCounter}`,
+			// 	'color: blue; font-weight: bold; font-size: 1.5em'
+			// )
+			clearInterval(myInterval)
+			console.log('%c END', 'color: red; font-weight: bold; font-size: 1.5em')
+		}
+
+		// Sends interval count to HTML input field
+		let intervalDisplay = document.getElementById('intervalCounter')
+		intervalDisplay.value = intervalCounter - 1
+	}, 1000)
+}
