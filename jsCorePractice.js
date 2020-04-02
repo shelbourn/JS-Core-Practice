@@ -222,3 +222,37 @@ const tenSecTimer = () => {
 		intervalDisplay.value = intervalCounter - 1
 	}, 1000)
 }
+
+/****************
+ * Using .setTimeout() Method to emulate .setInterval() functionality - Challenge 3 from Nick
+ *
+ * Write a function...
+ * Use setTimeout to console 1 second intervals up to 10 using recursion and then console out "End"
+ */
+
+// Retrieves user input for counter
+const userTimeout = () => {
+	timeoutValue = prompt('Enter a number to count to.')
+	return timeoutValue
+}
+
+// Recursive function to continuously call itself until break criteria (user-defined) is met
+const recursiveCounter = count => {
+	if (count <= parseInt(timeoutValue)) {
+		setTimeout(() => {
+			console.log(
+				`%c ${count}`,
+				'color: green; font-size: 1.5em; font-weight: bold;'
+			)
+			let userTimeoutDisplay = document.getElementById('recursiveTimeout')
+			userTimeoutDisplay.value = count
+			return recursiveCounter(count + 1)
+		}, 1000)
+	} else {
+		console.log(
+			'%c END',
+			'color: white; background-color: red; font-size: 1.5em; font-weight: bold;'
+		)
+		return count
+	}
+}
