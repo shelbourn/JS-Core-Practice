@@ -185,3 +185,11 @@ const fiveSecTimer = () => {
 		)
 	}, 6000)
 }
+
+/**********************
+ * setInterval() and clearInterval() Methods - Challenge 2 from Nick
+ *
+ * Write a function...
+ * Use setInterval to console out 1 second up to 10 seconds and then use clearInterval
+ * to clear it and console out "end"
+ */
