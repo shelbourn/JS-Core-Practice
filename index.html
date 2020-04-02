@@ -148,6 +148,28 @@
 				<button onclick="tenSecTimer()">Start Timer</button>
 				<input type="number" id="intervalCounter" />
 			</article>
+			<article>
+				<h2>
+					Recursive Function using .setTimeout() to emulate .setInterval()
+					functionality
+				</h2>
+				<p>
+					In this section I will use a recursive function to continuously call a
+					function that uses the .setTimeout() method to emulate the
+					functionality of the .setInterval() method. The function will run
+					until a user-defined count (break statement) is reached.
+				</p>
+				<p style="font-style: italic;">
+					Another challenge from my friend Nick
+				</p>
+				<p style="font-weight: bold;">
+					Click the button below to start a timer.
+				</p>
+				<button onclick="userTimeout(), recursiveCounter(1)">
+					Enter Your Value
+				</button>
+				<input type="number" id="recursiveTimeout" />
+			</article>
 		</section>
 	</body>
 </html>

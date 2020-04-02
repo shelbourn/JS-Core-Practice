@@ -231,17 +231,22 @@ const tenSecTimer = () => {
  */
 
 // Retrieves user input for counter
-const userTimeout = prompt('Enter a number to count to.')
+const userTimeout = () => {
+	timeoutValue = prompt('Enter a number to count to.')
+	return timeoutValue
+}
 
-// Recursive function to continuously call itself until break criteria is met
-const timeoutCounter = count => {
-	if (count <= parseInt(userTimeout)) {
+// Recursive function to continuously call itself until break criteria (user-defined) is met
+const recursiveCounter = count => {
+	if (count <= parseInt(timeoutValue)) {
 		setTimeout(() => {
 			console.log(
 				`%c ${count}`,
 				'color: green; font-size: 1.5em; font-weight: bold;'
 			)
-			return timeoutCounter(count + 1)
+			let userTimeoutDisplay = document.getElementById('recursiveTimeout')
+			userTimeoutDisplay.value = count
+			return recursiveCounter(count + 1)
 		}, 1000)
 	} else {
 		console.log(
@@ -251,4 +256,3 @@ const timeoutCounter = count => {
 		return count
 	}
 }
-timeoutCounter(1)
